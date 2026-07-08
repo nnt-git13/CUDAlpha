@@ -1,0 +1,46 @@
+{
+  "workload": "optimizer",
+  "device": "gpu",
+  "backend": "cupy-fw",
+  "size": {
+    "n_assets": 1000
+  },
+  "median_ms": 32.95240199986438,
+  "p95_ms": 34.54692800005432,
+  "std_ms": 0.6857482084907519,
+  "throughput": 30346.801426011847,
+  "peak_mem_mb": 0.0,
+  "gpu_util_pct": 19.5,
+  "passed_validation": true,
+  "validation_detail": {
+    "cpu": {
+      "sum": 0.9999999999999998,
+      "min_weight": 6.811367826767783e-12,
+      "achieved_return": 0.346822931520494,
+      "passed": true
+    },
+    "gpu": {
+      "sum": 1.0,
+      "min_weight": 0.0,
+      "achieved_return": 0.34680314012967683,
+      "passed": true
+    },
+    "obj_cpu": -0.3371123790039658,
+    "obj_gpu": -0.33711219086813005,
+    "obj_rel_err": 5.580804724510158e-07,
+    "passed": true
+  },
+  "speedup_vs_cpu": 18.466589294523747,
+  "job_id": "local",
+  "run_id": "1a1c07ab",
+  "timestamp": 1783475313.2311997,
+  "env": {
+    "python": "3.11.15",
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "git_sha": "unknown",
+    "nvidia_driver": "580.159.03",
+    "torch": "2.11.0+cu128",
+    "torch_cuda": "12.8",
+    "gpu_name": "NVIDIA GeForce RTX 5060 Laptop GPU"
+  }
+}

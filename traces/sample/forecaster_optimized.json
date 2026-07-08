@@ -1,0 +1,158 @@
+
+  {
+    "schemaVersion": 1,
+    "deviceProperties": [
+    {
+      "id": 0, "name": "NVIDIA GeForce RTX 5060 Laptop GPU", "totalGlobalMem": 8080195584,
+      "computeMajor": 12, "computeMinor": 0,
+      "maxThreadsPerBlock": 1024, "maxThreadsPerMultiprocessor": 1536,
+      "regsPerBlock": 65536, "warpSize": 32,
+      "sharedMemPerBlock": 49152, "numSms": 26
+    , "regsPerMultiprocessor": 65536, "sharedMemPerBlockOptin": 101376, "sharedMemPerMultiprocessor": 102400
+    }
+    ],
+      "trace_id": "A32A42E1D8824DF9B4B00AFF06219605",
+      "cuda_driver_version": 13000,
+      "cuda_runtime_version": 12080,
+      "cupti_version": 26,
+  "displayTimeUnit": "ms",
+  "baseTimeNanoseconds": 1782967788000000000,
+  "traceEvents": [
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503802024041.104, "dur": 32.703,
+    "args": {
+      "External id": 513,"Record function id": 0, "Sequence number": 0, "Fwd thread id": 0, "Ev Idx": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503802024101.176, "dur": 6.024,
+    "args": {
+      "External id": 514,"Record function id": 0, "Sequence number": 0, "Fwd thread id": 0, "Ev Idx": 1
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503802024112.967, "dur": 3.930,
+    "args": {
+      "External id": 515,"Record function id": 0, "Sequence number": 0, "Fwd thread id": 0, "Ev Idx": 2
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503802024121.404, "dur": 8.229,
+    "args": {
+      "External id": 516,"Record function id": 0, "Sequence number": 0, "Fwd thread id": 0, "Ev Idx": 3
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503802024133.905, "dur": 3.624,
+    "args": {
+      "External id": 517,"Record function id": 0, "Sequence number": 0, "Fwd thread id": 0, "Ev Idx": 4
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503802024141.780, "dur": 3.603,
+    "args": {
+      "External id": 518,"Record function id": 0, "Sequence number": 0, "Fwd thread id": 0, "Ev Idx": 5
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503802024149.620, "dur": 3.560,
+    "args": {
+      "External id": 519,"Record function id": 0, "Sequence number": 0, "Fwd thread id": 0, "Ev Idx": 6
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503802024157.390, "dur": 3.602,
+    "args": {
+      "External id": 520,"Record function id": 0, "Sequence number": 0, "Fwd thread id": 0, "Ev Idx": 7
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503802024165.320, "dur": 3.636,
+    "args": {
+      "External id": 521,"Record function id": 0, "Sequence number": 0, "Fwd thread id": 0, "Ev Idx": 8
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503802024173.282, "dur": 3.753,
+    "args": {
+      "External id": 522,"Record function id": 0, "Sequence number": 0, "Fwd thread id": 0, "Ev Idx": 9
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 503802023702.708, "pid": 467678, "tid": 0,
+    "args": {
+      "name": "python"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 503802023702.708, "pid": 467678, "tid": 0,
+    "args": {
+      "labels": "CPU"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 503802023702.708, "pid": 467678, "tid": 0,
+    "args": {
+      "sort_index": 467678
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 503802023702.708, "pid": 467678, "tid": 467678,
+    "args": {
+      "name": "thread 467678 (python)"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 503802023702.708, "pid": 467678, "tid": 467678,
+    "args": {
+      "sort_index": 467678
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 503802023702.708, "pid": 467678, "tid": 467678,
+    "args": {
+      "name": "thread 467678 (python)"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 503802023702.708, "pid": 467678, "tid": 467678,
+    "args": {
+      "sort_index": 467678
+    }
+  },
+  {
+    "ph": "X", "cat": "Trace", "ts": 503802023673.275, "dur": 9863.683,
+    "pid": "Spans", "tid": "PyTorch Profiler",
+    "name": "PyTorch Profiler (0)",
+    "args": {
+      "Op count": 0
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 503802023673.275,
+    "pid": "Spans", "tid": 0,
+    "args": {
+      "sort_index": 536870912
+    }
+  },
+  {
+    "name": "Iteration Start: PyTorch Profiler", "ph": "i", "s": "g",
+    "pid": "Traces", "tid": "Trace PyTorch Profiler", "ts": 503802023673.275
+  },
+  {
+    "name": "Record Window End", "ph": "i", "s": "g",
+    "pid": "", "tid": "", "ts": 503802033637.080
+  }
+  ],
+  "traceName": "/home/lnx-141209/Desktop/cudalpha/traces/forecaster_optimized.json"
+}

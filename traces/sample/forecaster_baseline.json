@@ -1,0 +1,3378 @@
+
+  {
+    "schemaVersion": 1,
+    "deviceProperties": [
+    {
+      "id": 0, "name": "NVIDIA GeForce RTX 5060 Laptop GPU", "totalGlobalMem": 8080195584,
+      "computeMajor": 12, "computeMinor": 0,
+      "maxThreadsPerBlock": 1024, "maxThreadsPerMultiprocessor": 1536,
+      "regsPerBlock": 65536, "warpSize": 32,
+      "sharedMemPerBlock": 49152, "numSms": 26
+    , "regsPerMultiprocessor": 65536, "sharedMemPerBlockOptin": 101376, "sharedMemPerMultiprocessor": 102400
+    }
+    ],
+      "trace_id": "5C4775447A354DF58ABA643C6BD371FD",
+      "cuda_driver_version": 13000,
+      "cuda_runtime_version": 12080,
+      "cupti_version": 26,
+  "displayTimeUnit": "ms",
+  "baseTimeNanoseconds": 1782967788000000000,
+  "traceEvents": [
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 467678, "tid": 467678,
+    "ts": 503801924067.163, "dur": 640.588,
+    "args": {
+      "External id": 1,"Record function id": 0, "Ev Idx": 0
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 467678, "tid": 467678,
+    "ts": 503801924075.831, "dur": 631.733,
+    "args": {
+      "External id": 2,"Record function id": 0, "Ev Idx": 1
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801924480.824, "dur": 31.925,
+    "args": {
+      "External id": 3,"Record function id": 0, "Ev Idx": 2
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801924515.650, "dur": 191.135,
+    "args": {
+      "External id": 4,"Record function id": 0, "Ev Idx": 3
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801925217.643, "dur": 574.414,
+    "args": {
+      "External id": 5,"Record function id": 0, "Ev Idx": 4
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801925364.874, "dur": 6.290,
+    "args": {
+      "External id": 6,"Record function id": 0, "Ev Idx": 5
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801925753.179, "dur": 38.003,
+    "args": {
+      "External id": 7,"Record function id": 0, "Ev Idx": 6
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801925758.992, "dur": 31.203,
+    "args": {
+      "External id": 8,"Record function id": 0, "Ev Idx": 7
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801925811.388, "dur": 19.335,
+    "args": {
+      "External id": 9,"Record function id": 0, "Ev Idx": 8
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801925813.667, "dur": 7.835,
+    "args": {
+      "External id": 10,"Record function id": 0, "Ev Idx": 9
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801925822.323, "dur": 8.235,
+    "args": {
+      "External id": 11,"Record function id": 0, "Ev Idx": 10
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801925822.794, "dur": 7.513,
+    "args": {
+      "External id": 12,"Record function id": 0, "Ev Idx": 11
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lstm", "pid": 467678, "tid": 467678,
+    "ts": 503801925871.264, "dur": 1598.821,
+    "args": {
+      "External id": 13,"Record function id": 0, "Ev Idx": 12
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cudnn_is_acceptable", "pid": 467678, "tid": 467678,
+    "ts": 503801925873.642, "dur": 2.400,
+    "args": {
+      "External id": 14,"Record function id": 0, "Ev Idx": 13
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801925903.051, "dur": 1.738,
+    "args": {
+      "External id": 15,"Record function id": 0, "Ev Idx": 14
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801926492.875, "dur": 8.071,
+    "args": {
+      "External id": 16,"Record function id": 0, "Ev Idx": 15
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801926495.950, "dur": 4.188,
+    "args": {
+      "External id": 17,"Record function id": 0, "Ev Idx": 16
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_cudnn_rnn", "pid": 467678, "tid": 467678,
+    "ts": 503801926718.094, "dur": 749.982,
+    "args": {
+      "External id": 18,"Record function id": 0, "Ev Idx": 17
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801926727.229, "dur": 9.891,
+    "args": {
+      "External id": 19,"Record function id": 0, "Ev Idx": 18
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801926732.657, "dur": 3.775,
+    "args": {
+      "External id": 20,"Record function id": 0, "Ev Idx": 19
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::contiguous", "pid": 467678, "tid": 467678,
+    "ts": 503801926744.149, "dur": 284.137,
+    "args": {
+      "External id": 21,"Record function id": 0, "Ev Idx": 20
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 467678, "tid": 467678,
+    "ts": 503801926746.105, "dur": 281.799,
+    "args": {
+      "External id": 22,"Record function id": 0, "Ev Idx": 21
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 467678, "tid": 467678,
+    "ts": 503801926985.523, "dur": 12.089,
+    "args": {
+      "External id": 23,"Record function id": 0, "Ev Idx": 22
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801926987.636, "dur": 9.219,
+    "args": {
+      "External id": 24,"Record function id": 0, "Ev Idx": 23
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801926999.335, "dur": 28.236,
+    "args": {
+      "External id": 25,"Record function id": 0, "Ev Idx": 24
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801927029.365, "dur": 3.209,
+    "args": {
+      "External id": 26,"Record function id": 0, "Ev Idx": 25
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801927033.181, "dur": 151.338,
+    "args": {
+      "External id": 27,"Record function id": 0, "Ev Idx": 26
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801927185.689, "dur": 2.402,
+    "args": {
+      "External id": 28,"Record function id": 0, "Ev Idx": 27
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801927231.470, "dur": 100.321,
+    "args": {
+      "External id": 29,"Record function id": 0, "Ev Idx": 28
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801927332.983, "dur": 1.137,
+    "args": {
+      "External id": 30,"Record function id": 0, "Ev Idx": 29
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose_", "pid": 467678, "tid": 467678,
+    "ts": 503801927450.438, "dur": 10.634,
+    "args": {
+      "External id": 31,"Record function id": 0, "Ev Idx": 30
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided_", "pid": 467678, "tid": 467678,
+    "ts": 503801927456.119, "dur": 4.639,
+    "args": {
+      "External id": 32,"Record function id": 0, "Ev Idx": 31
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 467678, "tid": 467678,
+    "ts": 503801927511.709, "dur": 5.377,
+    "args": {
+      "External id": 33,"Record function id": 0, "Ev Idx": 32
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801927515.063, "dur": 1.416,
+    "args": {
+      "External id": 34,"Record function id": 0, "Ev Idx": 33
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801927548.829, "dur": 66.847,
+    "args": {
+      "External id": 35,"Record function id": 0, "Ev Idx": 34
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801927550.564, "dur": 8.362,
+    "args": {
+      "External id": 36,"Record function id": 0, "Ev Idx": 35
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801927553.144, "dur": 2.046,
+    "args": {
+      "External id": 37,"Record function id": 0, "Ev Idx": 36
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801927554.189, "dur": 0.811,
+    "args": {
+      "External id": 38,"Record function id": 0, "Ev Idx": 37
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801927560.619, "dur": 53.768,
+    "args": {
+      "External id": 39,"Record function id": 0, "Ev Idx": 38
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::gelu", "pid": 467678, "tid": 467678,
+    "ts": 503801927625.987, "dur": 19.644,
+    "args": {
+      "External id": 40,"Record function id": 0, "Ev Idx": 39
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801927652.415, "dur": 40.615,
+    "args": {
+      "External id": 41,"Record function id": 0, "Ev Idx": 40
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801927652.831, "dur": 2.789,
+    "args": {
+      "External id": 42,"Record function id": 0, "Ev Idx": 41
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801927653.338, "dur": 1.522,
+    "args": {
+      "External id": 43,"Record function id": 0, "Ev Idx": 42
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801927653.986, "dur": 0.749,
+    "args": {
+      "External id": 44,"Record function id": 0, "Ev Idx": 43
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801927656.089, "dur": 36.581,
+    "args": {
+      "External id": 45,"Record function id": 0, "Ev Idx": 44
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 467678, "tid": 467678,
+    "ts": 503801927659.980, "dur": 4.324,
+    "args": {
+      "External id": 46,"Record function id": 0, "Ev Idx": 45
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801927662.312, "dur": 0.549,
+    "args": {
+      "External id": 47,"Record function id": 0, "Ev Idx": 46
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 467678, "tid": 467678,
+    "ts": 503801927727.367, "dur": 6771.373,
+    "args": {
+      "External id": 48,"Record function id": 0, "Ev Idx": 47
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 467678, "tid": 467678,
+    "ts": 503801927729.971, "dur": 6767.859,
+    "args": {
+      "External id": 49,"Record function id": 0, "Ev Idx": 48
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801927732.564, "dur": 3.482,
+    "args": {
+      "External id": 50,"Record function id": 0, "Ev Idx": 49
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801927737.282, "dur": 6755.218,
+    "args": {
+      "External id": 51,"Record function id": 0, "Ev Idx": 50
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801934577.786, "dur": 51.834,
+    "args": {
+      "External id": 52,"Record function id": 0, "Ev Idx": 51
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801934582.170, "dur": 12.938,
+    "args": {
+      "External id": 53,"Record function id": 0, "Ev Idx": 52
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801934596.510, "dur": 32.870,
+    "args": {
+      "External id": 54,"Record function id": 0, "Ev Idx": 53
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801934597.922, "dur": 31.036,
+    "args": {
+      "External id": 55,"Record function id": 0, "Ev Idx": 54
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801934633.016, "dur": 6.958,
+    "args": {
+      "External id": 56,"Record function id": 0, "Ev Idx": 55
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801934633.333, "dur": 1.821,
+    "args": {
+      "External id": 57,"Record function id": 0, "Ev Idx": 56
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801934635.423, "dur": 4.470,
+    "args": {
+      "External id": 58,"Record function id": 0, "Ev Idx": 57
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801934635.675, "dur": 4.039,
+    "args": {
+      "External id": 59,"Record function id": 0, "Ev Idx": 58
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lstm", "pid": 467678, "tid": 467678,
+    "ts": 503801934664.289, "dur": 202.393,
+    "args": {
+      "External id": 60,"Record function id": 0, "Ev Idx": 59
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cudnn_is_acceptable", "pid": 467678, "tid": 467678,
+    "ts": 503801934666.306, "dur": 2.225,
+    "args": {
+      "External id": 61,"Record function id": 0, "Ev Idx": 60
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801934685.372, "dur": 0.971,
+    "args": {
+      "External id": 62,"Record function id": 0, "Ev Idx": 61
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801934687.616, "dur": 5.076,
+    "args": {
+      "External id": 63,"Record function id": 0, "Ev Idx": 62
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801934689.487, "dur": 2.978,
+    "args": {
+      "External id": 64,"Record function id": 0, "Ev Idx": 63
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_cudnn_rnn", "pid": 467678, "tid": 467678,
+    "ts": 503801934700.915, "dur": 164.685,
+    "args": {
+      "External id": 65,"Record function id": 0, "Ev Idx": 64
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801934703.439, "dur": 5.599,
+    "args": {
+      "External id": 66,"Record function id": 0, "Ev Idx": 65
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801934706.157, "dur": 2.613,
+    "args": {
+      "External id": 67,"Record function id": 0, "Ev Idx": 66
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::contiguous", "pid": 467678, "tid": 467678,
+    "ts": 503801934712.759, "dur": 22.184,
+    "args": {
+      "External id": 68,"Record function id": 0, "Ev Idx": 67
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 467678, "tid": 467678,
+    "ts": 503801934714.291, "dur": 20.519,
+    "args": {
+      "External id": 69,"Record function id": 0, "Ev Idx": 68
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 467678, "tid": 467678,
+    "ts": 503801934716.473, "dur": 2.742,
+    "args": {
+      "External id": 70,"Record function id": 0, "Ev Idx": 69
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801934717.188, "dur": 1.481,
+    "args": {
+      "External id": 71,"Record function id": 0, "Ev Idx": 70
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801934720.320, "dur": 14.202,
+    "args": {
+      "External id": 72,"Record function id": 0, "Ev Idx": 71
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801934735.312, "dur": 2.560,
+    "args": {
+      "External id": 73,"Record function id": 0, "Ev Idx": 72
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801934738.255, "dur": 1.223,
+    "args": {
+      "External id": 74,"Record function id": 0, "Ev Idx": 73
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801934739.719, "dur": 0.814,
+    "args": {
+      "External id": 75,"Record function id": 0, "Ev Idx": 74
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801934760.416, "dur": 1.209,
+    "args": {
+      "External id": 76,"Record function id": 0, "Ev Idx": 75
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801934761.868, "dur": 0.619,
+    "args": {
+      "External id": 77,"Record function id": 0, "Ev Idx": 76
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose_", "pid": 467678, "tid": 467678,
+    "ts": 503801934855.950, "dur": 5.692,
+    "args": {
+      "External id": 78,"Record function id": 0, "Ev Idx": 77
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided_", "pid": 467678, "tid": 467678,
+    "ts": 503801934857.502, "dur": 3.973,
+    "args": {
+      "External id": 79,"Record function id": 0, "Ev Idx": 78
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 467678, "tid": 467678,
+    "ts": 503801934886.033, "dur": 3.488,
+    "args": {
+      "External id": 80,"Record function id": 0, "Ev Idx": 79
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801934888.394, "dur": 0.601,
+    "args": {
+      "External id": 81,"Record function id": 0, "Ev Idx": 80
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801934906.491, "dur": 50.231,
+    "args": {
+      "External id": 82,"Record function id": 0, "Ev Idx": 81
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801934908.345, "dur": 6.305,
+    "args": {
+      "External id": 83,"Record function id": 0, "Ev Idx": 82
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801934910.361, "dur": 1.244,
+    "args": {
+      "External id": 84,"Record function id": 0, "Ev Idx": 83
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801934910.820, "dur": 0.639,
+    "args": {
+      "External id": 85,"Record function id": 0, "Ev Idx": 84
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801934915.848, "dur": 39.781,
+    "args": {
+      "External id": 86,"Record function id": 0, "Ev Idx": 85
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::gelu", "pid": 467678, "tid": 467678,
+    "ts": 503801934963.051, "dur": 9.314,
+    "args": {
+      "External id": 87,"Record function id": 0, "Ev Idx": 86
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801934976.891, "dur": 28.081,
+    "args": {
+      "External id": 88,"Record function id": 0, "Ev Idx": 87
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801934977.151, "dur": 1.557,
+    "args": {
+      "External id": 89,"Record function id": 0, "Ev Idx": 88
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801934977.494, "dur": 0.737,
+    "args": {
+      "External id": 90,"Record function id": 0, "Ev Idx": 89
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801934977.777, "dur": 0.361,
+    "args": {
+      "External id": 91,"Record function id": 0, "Ev Idx": 90
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801934978.895, "dur": 25.836,
+    "args": {
+      "External id": 92,"Record function id": 0, "Ev Idx": 91
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 467678, "tid": 467678,
+    "ts": 503801934981.189, "dur": 3.960,
+    "args": {
+      "External id": 93,"Record function id": 0, "Ev Idx": 92
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801934983.890, "dur": 0.291,
+    "args": {
+      "External id": 94,"Record function id": 0, "Ev Idx": 93
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 467678, "tid": 467678,
+    "ts": 503801935035.427, "dur": 6222.248,
+    "args": {
+      "External id": 95,"Record function id": 0, "Ev Idx": 94
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 467678, "tid": 467678,
+    "ts": 503801935037.750, "dur": 6219.432,
+    "args": {
+      "External id": 96,"Record function id": 0, "Ev Idx": 95
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801935040.727, "dur": 2.695,
+    "args": {
+      "External id": 97,"Record function id": 0, "Ev Idx": 96
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801935043.963, "dur": 6211.971,
+    "args": {
+      "External id": 98,"Record function id": 0, "Ev Idx": 97
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801941301.620, "dur": 20.587,
+    "args": {
+      "External id": 99,"Record function id": 0, "Ev Idx": 98
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801941303.618, "dur": 4.181,
+    "args": {
+      "External id": 100,"Record function id": 0, "Ev Idx": 99
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801941308.915, "dur": 13.202,
+    "args": {
+      "External id": 101,"Record function id": 0, "Ev Idx": 100
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801941310.652, "dur": 11.176,
+    "args": {
+      "External id": 102,"Record function id": 0, "Ev Idx": 101
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801941324.328, "dur": 4.495,
+    "args": {
+      "External id": 103,"Record function id": 0, "Ev Idx": 102
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801941324.591, "dur": 0.966,
+    "args": {
+      "External id": 104,"Record function id": 0, "Ev Idx": 103
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801941325.800, "dur": 2.965,
+    "args": {
+      "External id": 105,"Record function id": 0, "Ev Idx": 104
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801941326.001, "dur": 2.602,
+    "args": {
+      "External id": 106,"Record function id": 0, "Ev Idx": 105
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lstm", "pid": 467678, "tid": 467678,
+    "ts": 503801941350.265, "dur": 141.670,
+    "args": {
+      "External id": 107,"Record function id": 0, "Ev Idx": 106
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cudnn_is_acceptable", "pid": 467678, "tid": 467678,
+    "ts": 503801941352.378, "dur": 0.884,
+    "args": {
+      "External id": 108,"Record function id": 0, "Ev Idx": 107
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801941366.537, "dur": 0.833,
+    "args": {
+      "External id": 109,"Record function id": 0, "Ev Idx": 108
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801941368.648, "dur": 4.047,
+    "args": {
+      "External id": 110,"Record function id": 0, "Ev Idx": 109
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801941369.933, "dur": 2.445,
+    "args": {
+      "External id": 111,"Record function id": 0, "Ev Idx": 110
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_cudnn_rnn", "pid": 467678, "tid": 467678,
+    "ts": 503801941379.526, "dur": 111.521,
+    "args": {
+      "External id": 112,"Record function id": 0, "Ev Idx": 111
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801941381.168, "dur": 2.311,
+    "args": {
+      "External id": 113,"Record function id": 0, "Ev Idx": 112
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801941382.062, "dur": 1.223,
+    "args": {
+      "External id": 114,"Record function id": 0, "Ev Idx": 113
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::contiguous", "pid": 467678, "tid": 467678,
+    "ts": 503801941385.893, "dur": 13.784,
+    "args": {
+      "External id": 115,"Record function id": 0, "Ev Idx": 114
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 467678, "tid": 467678,
+    "ts": 503801941387.074, "dur": 12.503,
+    "args": {
+      "External id": 116,"Record function id": 0, "Ev Idx": 115
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 467678, "tid": 467678,
+    "ts": 503801941388.567, "dur": 2.129,
+    "args": {
+      "External id": 117,"Record function id": 0, "Ev Idx": 116
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801941389.129, "dur": 1.235,
+    "args": {
+      "External id": 118,"Record function id": 0, "Ev Idx": 117
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801941391.372, "dur": 8.040,
+    "args": {
+      "External id": 119,"Record function id": 0, "Ev Idx": 118
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801941400.014, "dur": 1.922,
+    "args": {
+      "External id": 120,"Record function id": 0, "Ev Idx": 119
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801941402.183, "dur": 0.888,
+    "args": {
+      "External id": 121,"Record function id": 0, "Ev Idx": 120
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801941403.279, "dur": 0.764,
+    "args": {
+      "External id": 122,"Record function id": 0, "Ev Idx": 121
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801941419.650, "dur": 1.087,
+    "args": {
+      "External id": 123,"Record function id": 0, "Ev Idx": 122
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801941420.995, "dur": 0.478,
+    "args": {
+      "External id": 124,"Record function id": 0, "Ev Idx": 123
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose_", "pid": 467678, "tid": 467678,
+    "ts": 503801941483.880, "dur": 4.337,
+    "args": {
+      "External id": 125,"Record function id": 0, "Ev Idx": 124
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided_", "pid": 467678, "tid": 467678,
+    "ts": 503801941485.352, "dur": 2.456,
+    "args": {
+      "External id": 126,"Record function id": 0, "Ev Idx": 125
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 467678, "tid": 467678,
+    "ts": 503801941510.883, "dur": 2.966,
+    "args": {
+      "External id": 127,"Record function id": 0, "Ev Idx": 126
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801941512.736, "dur": 0.368,
+    "args": {
+      "External id": 128,"Record function id": 0, "Ev Idx": 127
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801941524.794, "dur": 29.820,
+    "args": {
+      "External id": 129,"Record function id": 0, "Ev Idx": 128
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801941525.877, "dur": 2.470,
+    "args": {
+      "External id": 130,"Record function id": 0, "Ev Idx": 129
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801941526.463, "dur": 0.771,
+    "args": {
+      "External id": 131,"Record function id": 0, "Ev Idx": 130
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801941526.742, "dur": 0.411,
+    "args": {
+      "External id": 132,"Record function id": 0, "Ev Idx": 131
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801941528.797, "dur": 25.362,
+    "args": {
+      "External id": 133,"Record function id": 0, "Ev Idx": 132
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::gelu", "pid": 467678, "tid": 467678,
+    "ts": 503801941559.216, "dur": 7.317,
+    "args": {
+      "External id": 134,"Record function id": 0, "Ev Idx": 133
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801941570.210, "dur": 20.449,
+    "args": {
+      "External id": 135,"Record function id": 0, "Ev Idx": 134
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801941570.468, "dur": 1.200,
+    "args": {
+      "External id": 136,"Record function id": 0, "Ev Idx": 135
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801941570.665, "dur": 0.686,
+    "args": {
+      "External id": 137,"Record function id": 0, "Ev Idx": 136
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801941571.017, "dur": 0.270,
+    "args": {
+      "External id": 138,"Record function id": 0, "Ev Idx": 137
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801941571.847, "dur": 18.639,
+    "args": {
+      "External id": 139,"Record function id": 0, "Ev Idx": 138
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 467678, "tid": 467678,
+    "ts": 503801941573.529, "dur": 2.769,
+    "args": {
+      "External id": 140,"Record function id": 0, "Ev Idx": 139
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801941575.353, "dur": 0.278,
+    "args": {
+      "External id": 141,"Record function id": 0, "Ev Idx": 140
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 467678, "tid": 467678,
+    "ts": 503801941612.973, "dur": 6259.643,
+    "args": {
+      "External id": 142,"Record function id": 0, "Ev Idx": 141
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 467678, "tid": 467678,
+    "ts": 503801941614.743, "dur": 6257.679,
+    "args": {
+      "External id": 143,"Record function id": 0, "Ev Idx": 142
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801941616.603, "dur": 2.250,
+    "args": {
+      "External id": 144,"Record function id": 0, "Ev Idx": 143
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801941619.246, "dur": 6252.226,
+    "args": {
+      "External id": 145,"Record function id": 0, "Ev Idx": 144
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801947908.696, "dur": 18.168,
+    "args": {
+      "External id": 146,"Record function id": 0, "Ev Idx": 145
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801947910.926, "dur": 3.723,
+    "args": {
+      "External id": 147,"Record function id": 0, "Ev Idx": 146
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801947915.492, "dur": 11.205,
+    "args": {
+      "External id": 148,"Record function id": 0, "Ev Idx": 147
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801947916.381, "dur": 10.119,
+    "args": {
+      "External id": 149,"Record function id": 0, "Ev Idx": 148
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801947928.721, "dur": 4.041,
+    "args": {
+      "External id": 150,"Record function id": 0, "Ev Idx": 149
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801947928.954, "dur": 0.942,
+    "args": {
+      "External id": 151,"Record function id": 0, "Ev Idx": 150
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801947930.125, "dur": 2.586,
+    "args": {
+      "External id": 152,"Record function id": 0, "Ev Idx": 151
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801947930.317, "dur": 2.256,
+    "args": {
+      "External id": 153,"Record function id": 0, "Ev Idx": 152
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lstm", "pid": 467678, "tid": 467678,
+    "ts": 503801947949.420, "dur": 113.898,
+    "args": {
+      "External id": 154,"Record function id": 0, "Ev Idx": 153
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cudnn_is_acceptable", "pid": 467678, "tid": 467678,
+    "ts": 503801947950.790, "dur": 0.802,
+    "args": {
+      "External id": 155,"Record function id": 0, "Ev Idx": 154
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801947961.617, "dur": 0.655,
+    "args": {
+      "External id": 156,"Record function id": 0, "Ev Idx": 155
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801947963.006, "dur": 3.413,
+    "args": {
+      "External id": 157,"Record function id": 0, "Ev Idx": 156
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801947964.060, "dur": 1.727,
+    "args": {
+      "External id": 158,"Record function id": 0, "Ev Idx": 157
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_cudnn_rnn", "pid": 467678, "tid": 467678,
+    "ts": 503801947971.977, "dur": 90.595,
+    "args": {
+      "External id": 159,"Record function id": 0, "Ev Idx": 158
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801947973.473, "dur": 1.808,
+    "args": {
+      "External id": 160,"Record function id": 0, "Ev Idx": 159
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801947974.177, "dur": 0.985,
+    "args": {
+      "External id": 161,"Record function id": 0, "Ev Idx": 160
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::contiguous", "pid": 467678, "tid": 467678,
+    "ts": 503801947977.074, "dur": 11.334,
+    "args": {
+      "External id": 162,"Record function id": 0, "Ev Idx": 161
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 467678, "tid": 467678,
+    "ts": 503801947978.025, "dur": 10.287,
+    "args": {
+      "External id": 163,"Record function id": 0, "Ev Idx": 162
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 467678, "tid": 467678,
+    "ts": 503801947979.292, "dur": 1.977,
+    "args": {
+      "External id": 164,"Record function id": 0, "Ev Idx": 163
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801947980.158, "dur": 0.829,
+    "args": {
+      "External id": 165,"Record function id": 0, "Ev Idx": 164
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801947981.780, "dur": 6.382,
+    "args": {
+      "External id": 166,"Record function id": 0, "Ev Idx": 165
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801947988.659, "dur": 1.724,
+    "args": {
+      "External id": 167,"Record function id": 0, "Ev Idx": 166
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801947990.598, "dur": 0.743,
+    "args": {
+      "External id": 168,"Record function id": 0, "Ev Idx": 167
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801947991.505, "dur": 0.729,
+    "args": {
+      "External id": 169,"Record function id": 0, "Ev Idx": 168
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801948004.655, "dur": 0.803,
+    "args": {
+      "External id": 170,"Record function id": 0, "Ev Idx": 169
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801948005.682, "dur": 0.428,
+    "args": {
+      "External id": 171,"Record function id": 0, "Ev Idx": 170
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose_", "pid": 467678, "tid": 467678,
+    "ts": 503801948057.102, "dur": 3.386,
+    "args": {
+      "External id": 172,"Record function id": 0, "Ev Idx": 171
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided_", "pid": 467678, "tid": 467678,
+    "ts": 503801948058.330, "dur": 2.027,
+    "args": {
+      "External id": 173,"Record function id": 0, "Ev Idx": 172
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 467678, "tid": 467678,
+    "ts": 503801948073.534, "dur": 2.423,
+    "args": {
+      "External id": 174,"Record function id": 0, "Ev Idx": 173
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801948075.233, "dur": 0.292,
+    "args": {
+      "External id": 175,"Record function id": 0, "Ev Idx": 174
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801948084.411, "dur": 25.908,
+    "args": {
+      "External id": 176,"Record function id": 0, "Ev Idx": 175
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801948085.262, "dur": 2.507,
+    "args": {
+      "External id": 177,"Record function id": 0, "Ev Idx": 176
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801948086.104, "dur": 0.705,
+    "args": {
+      "External id": 178,"Record function id": 0, "Ev Idx": 177
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801948086.353, "dur": 0.375,
+    "args": {
+      "External id": 179,"Record function id": 0, "Ev Idx": 178
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801948088.180, "dur": 21.633,
+    "args": {
+      "External id": 180,"Record function id": 0, "Ev Idx": 179
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::gelu", "pid": 467678, "tid": 467678,
+    "ts": 503801948114.533, "dur": 5.773,
+    "args": {
+      "External id": 181,"Record function id": 0, "Ev Idx": 180
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801948123.627, "dur": 18.385,
+    "args": {
+      "External id": 182,"Record function id": 0, "Ev Idx": 181
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801948123.829, "dur": 1.203,
+    "args": {
+      "External id": 183,"Record function id": 0, "Ev Idx": 182
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801948124.047, "dur": 0.705,
+    "args": {
+      "External id": 184,"Record function id": 0, "Ev Idx": 183
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801948124.247, "dur": 0.426,
+    "args": {
+      "External id": 185,"Record function id": 0, "Ev Idx": 184
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801948125.211, "dur": 16.620,
+    "args": {
+      "External id": 186,"Record function id": 0, "Ev Idx": 185
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 467678, "tid": 467678,
+    "ts": 503801948126.976, "dur": 2.214,
+    "args": {
+      "External id": 187,"Record function id": 0, "Ev Idx": 186
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801948128.510, "dur": 0.207,
+    "args": {
+      "External id": 188,"Record function id": 0, "Ev Idx": 187
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 467678, "tid": 467678,
+    "ts": 503801948160.928, "dur": 6811.944,
+    "args": {
+      "External id": 189,"Record function id": 0, "Ev Idx": 188
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 467678, "tid": 467678,
+    "ts": 503801948162.431, "dur": 6810.225,
+    "args": {
+      "External id": 190,"Record function id": 0, "Ev Idx": 189
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801948163.580, "dur": 1.948,
+    "args": {
+      "External id": 191,"Record function id": 0, "Ev Idx": 190
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801948165.821, "dur": 6805.989,
+    "args": {
+      "External id": 192,"Record function id": 0, "Ev Idx": 191
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801955002.480, "dur": 14.558,
+    "args": {
+      "External id": 193,"Record function id": 0, "Ev Idx": 192
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801955004.084, "dur": 3.142,
+    "args": {
+      "External id": 194,"Record function id": 0, "Ev Idx": 193
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801955008.248, "dur": 8.669,
+    "args": {
+      "External id": 195,"Record function id": 0, "Ev Idx": 194
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801955009.206, "dur": 7.522,
+    "args": {
+      "External id": 196,"Record function id": 0, "Ev Idx": 195
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801955018.824, "dur": 4.231,
+    "args": {
+      "External id": 197,"Record function id": 0, "Ev Idx": 196
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801955019.044, "dur": 1.125,
+    "args": {
+      "External id": 198,"Record function id": 0, "Ev Idx": 197
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801955020.358, "dur": 2.644,
+    "args": {
+      "External id": 199,"Record function id": 0, "Ev Idx": 198
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801955020.634, "dur": 2.213,
+    "args": {
+      "External id": 200,"Record function id": 0, "Ev Idx": 199
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lstm", "pid": 467678, "tid": 467678,
+    "ts": 503801955036.398, "dur": 93.285,
+    "args": {
+      "External id": 201,"Record function id": 0, "Ev Idx": 200
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cudnn_is_acceptable", "pid": 467678, "tid": 467678,
+    "ts": 503801955037.179, "dur": 0.656,
+    "args": {
+      "External id": 202,"Record function id": 0, "Ev Idx": 201
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801955045.580, "dur": 0.584,
+    "args": {
+      "External id": 203,"Record function id": 0, "Ev Idx": 202
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801955046.638, "dur": 2.027,
+    "args": {
+      "External id": 204,"Record function id": 0, "Ev Idx": 203
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801955047.488, "dur": 1.016,
+    "args": {
+      "External id": 205,"Record function id": 0, "Ev Idx": 204
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_cudnn_rnn", "pid": 467678, "tid": 467678,
+    "ts": 503801955052.743, "dur": 76.345,
+    "args": {
+      "External id": 206,"Record function id": 0, "Ev Idx": 205
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801955053.688, "dur": 1.448,
+    "args": {
+      "External id": 207,"Record function id": 0, "Ev Idx": 206
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801955054.344, "dur": 0.684,
+    "args": {
+      "External id": 208,"Record function id": 0, "Ev Idx": 207
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::contiguous", "pid": 467678, "tid": 467678,
+    "ts": 503801955056.654, "dur": 8.403,
+    "args": {
+      "External id": 209,"Record function id": 0, "Ev Idx": 208
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 467678, "tid": 467678,
+    "ts": 503801955057.274, "dur": 7.714,
+    "args": {
+      "External id": 210,"Record function id": 0, "Ev Idx": 209
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 467678, "tid": 467678,
+    "ts": 503801955058.021, "dur": 1.355,
+    "args": {
+      "External id": 211,"Record function id": 0, "Ev Idx": 210
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801955058.317, "dur": 0.900,
+    "args": {
+      "External id": 212,"Record function id": 0, "Ev Idx": 211
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801955059.789, "dur": 5.038,
+    "args": {
+      "External id": 213,"Record function id": 0, "Ev Idx": 212
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801955065.335, "dur": 1.832,
+    "args": {
+      "External id": 214,"Record function id": 0, "Ev Idx": 213
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801955067.403, "dur": 0.812,
+    "args": {
+      "External id": 215,"Record function id": 0, "Ev Idx": 214
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801955068.409, "dur": 0.760,
+    "args": {
+      "External id": 216,"Record function id": 0, "Ev Idx": 215
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801955079.439, "dur": 0.906,
+    "args": {
+      "External id": 217,"Record function id": 0, "Ev Idx": 216
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801955080.553, "dur": 0.402,
+    "args": {
+      "External id": 218,"Record function id": 0, "Ev Idx": 217
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose_", "pid": 467678, "tid": 467678,
+    "ts": 503801955124.495, "dur": 2.505,
+    "args": {
+      "External id": 219,"Record function id": 0, "Ev Idx": 218
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided_", "pid": 467678, "tid": 467678,
+    "ts": 503801955125.526, "dur": 1.353,
+    "args": {
+      "External id": 220,"Record function id": 0, "Ev Idx": 219
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 467678, "tid": 467678,
+    "ts": 503801955137.482, "dur": 1.594,
+    "args": {
+      "External id": 221,"Record function id": 0, "Ev Idx": 220
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801955138.403, "dur": 0.365,
+    "args": {
+      "External id": 222,"Record function id": 0, "Ev Idx": 221
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801955146.773, "dur": 20.364,
+    "args": {
+      "External id": 223,"Record function id": 0, "Ev Idx": 222
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801955147.229, "dur": 1.988,
+    "args": {
+      "External id": 224,"Record function id": 0, "Ev Idx": 223
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801955147.793, "dur": 0.567,
+    "args": {
+      "External id": 225,"Record function id": 0, "Ev Idx": 224
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801955148.005, "dur": 0.286,
+    "args": {
+      "External id": 226,"Record function id": 0, "Ev Idx": 225
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801955149.548, "dur": 17.134,
+    "args": {
+      "External id": 227,"Record function id": 0, "Ev Idx": 226
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::gelu", "pid": 467678, "tid": 467678,
+    "ts": 503801955170.801, "dur": 4.994,
+    "args": {
+      "External id": 228,"Record function id": 0, "Ev Idx": 227
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801955178.900, "dur": 15.257,
+    "args": {
+      "External id": 229,"Record function id": 0, "Ev Idx": 228
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801955179.118, "dur": 1.072,
+    "args": {
+      "External id": 230,"Record function id": 0, "Ev Idx": 229
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801955179.329, "dur": 0.603,
+    "args": {
+      "External id": 231,"Record function id": 0, "Ev Idx": 230
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801955179.546, "dur": 0.304,
+    "args": {
+      "External id": 232,"Record function id": 0, "Ev Idx": 231
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801955180.354, "dur": 13.608,
+    "args": {
+      "External id": 233,"Record function id": 0, "Ev Idx": 232
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 467678, "tid": 467678,
+    "ts": 503801955181.966, "dur": 1.501,
+    "args": {
+      "External id": 234,"Record function id": 0, "Ev Idx": 233
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801955182.902, "dur": 0.187,
+    "args": {
+      "External id": 235,"Record function id": 0, "Ev Idx": 234
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 467678, "tid": 467678,
+    "ts": 503801955215.012, "dur": 6500.160,
+    "args": {
+      "External id": 236,"Record function id": 0, "Ev Idx": 235
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 467678, "tid": 467678,
+    "ts": 503801955215.974, "dur": 6498.894,
+    "args": {
+      "External id": 237,"Record function id": 0, "Ev Idx": 236
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801955216.932, "dur": 1.831,
+    "args": {
+      "External id": 238,"Record function id": 0, "Ev Idx": 237
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801955219.062, "dur": 6493.636,
+    "args": {
+      "External id": 239,"Record function id": 0, "Ev Idx": 238
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801961751.232, "dur": 22.399,
+    "args": {
+      "External id": 240,"Record function id": 0, "Ev Idx": 239
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801961753.074, "dur": 5.499,
+    "args": {
+      "External id": 241,"Record function id": 0, "Ev Idx": 240
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801961759.141, "dur": 14.292,
+    "args": {
+      "External id": 242,"Record function id": 0, "Ev Idx": 241
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801961759.719, "dur": 13.474,
+    "args": {
+      "External id": 243,"Record function id": 0, "Ev Idx": 242
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801961776.093, "dur": 5.769,
+    "args": {
+      "External id": 244,"Record function id": 0, "Ev Idx": 243
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801961776.386, "dur": 1.426,
+    "args": {
+      "External id": 245,"Record function id": 0, "Ev Idx": 244
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801961778.025, "dur": 3.781,
+    "args": {
+      "External id": 246,"Record function id": 0, "Ev Idx": 245
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801961778.239, "dur": 3.416,
+    "args": {
+      "External id": 247,"Record function id": 0, "Ev Idx": 246
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lstm", "pid": 467678, "tid": 467678,
+    "ts": 503801961794.686, "dur": 100.204,
+    "args": {
+      "External id": 248,"Record function id": 0, "Ev Idx": 247
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cudnn_is_acceptable", "pid": 467678, "tid": 467678,
+    "ts": 503801961795.552, "dur": 0.801,
+    "args": {
+      "External id": 249,"Record function id": 0, "Ev Idx": 248
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801961803.504, "dur": 0.748,
+    "args": {
+      "External id": 250,"Record function id": 0, "Ev Idx": 249
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801961804.751, "dur": 2.069,
+    "args": {
+      "External id": 251,"Record function id": 0, "Ev Idx": 250
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801961805.504, "dur": 1.138,
+    "args": {
+      "External id": 252,"Record function id": 0, "Ev Idx": 251
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_cudnn_rnn", "pid": 467678, "tid": 467678,
+    "ts": 503801961811.068, "dur": 83.013,
+    "args": {
+      "External id": 253,"Record function id": 0, "Ev Idx": 252
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801961812.246, "dur": 2.422,
+    "args": {
+      "External id": 254,"Record function id": 0, "Ev Idx": 253
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801961813.394, "dur": 1.058,
+    "args": {
+      "External id": 255,"Record function id": 0, "Ev Idx": 254
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::contiguous", "pid": 467678, "tid": 467678,
+    "ts": 503801961815.762, "dur": 11.268,
+    "args": {
+      "External id": 256,"Record function id": 0, "Ev Idx": 255
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 467678, "tid": 467678,
+    "ts": 503801961816.222, "dur": 10.699,
+    "args": {
+      "External id": 257,"Record function id": 0, "Ev Idx": 256
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 467678, "tid": 467678,
+    "ts": 503801961817.079, "dur": 1.762,
+    "args": {
+      "External id": 258,"Record function id": 0, "Ev Idx": 257
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801961817.464, "dur": 1.136,
+    "args": {
+      "External id": 259,"Record function id": 0, "Ev Idx": 258
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801961819.437, "dur": 7.321,
+    "args": {
+      "External id": 260,"Record function id": 0, "Ev Idx": 259
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801961827.372, "dur": 1.574,
+    "args": {
+      "External id": 261,"Record function id": 0, "Ev Idx": 260
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801961829.189, "dur": 0.846,
+    "args": {
+      "External id": 262,"Record function id": 0, "Ev Idx": 261
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801961830.219, "dur": 0.808,
+    "args": {
+      "External id": 263,"Record function id": 0, "Ev Idx": 262
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801961842.176, "dur": 0.974,
+    "args": {
+      "External id": 264,"Record function id": 0, "Ev Idx": 263
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801961843.356, "dur": 0.504,
+    "args": {
+      "External id": 265,"Record function id": 0, "Ev Idx": 264
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose_", "pid": 467678, "tid": 467678,
+    "ts": 503801961889.147, "dur": 2.364,
+    "args": {
+      "External id": 266,"Record function id": 0, "Ev Idx": 265
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided_", "pid": 467678, "tid": 467678,
+    "ts": 503801961889.816, "dur": 1.564,
+    "args": {
+      "External id": 267,"Record function id": 0, "Ev Idx": 266
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 467678, "tid": 467678,
+    "ts": 503801961904.452, "dur": 1.994,
+    "args": {
+      "External id": 268,"Record function id": 0, "Ev Idx": 267
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801961905.496, "dur": 0.556,
+    "args": {
+      "External id": 269,"Record function id": 0, "Ev Idx": 268
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801961914.486, "dur": 23.171,
+    "args": {
+      "External id": 270,"Record function id": 0, "Ev Idx": 269
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801961915.120, "dur": 2.968,
+    "args": {
+      "External id": 271,"Record function id": 0, "Ev Idx": 270
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801961915.864, "dur": 0.854,
+    "args": {
+      "External id": 272,"Record function id": 0, "Ev Idx": 271
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801961916.241, "dur": 0.364,
+    "args": {
+      "External id": 273,"Record function id": 0, "Ev Idx": 272
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801961918.532, "dur": 18.563,
+    "args": {
+      "External id": 274,"Record function id": 0, "Ev Idx": 273
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::gelu", "pid": 467678, "tid": 467678,
+    "ts": 503801961941.414, "dur": 5.408,
+    "args": {
+      "External id": 275,"Record function id": 0, "Ev Idx": 274
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801961950.241, "dur": 16.900,
+    "args": {
+      "External id": 276,"Record function id": 0, "Ev Idx": 275
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801961950.467, "dur": 1.347,
+    "args": {
+      "External id": 277,"Record function id": 0, "Ev Idx": 276
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801961950.769, "dur": 0.721,
+    "args": {
+      "External id": 278,"Record function id": 0, "Ev Idx": 277
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801961951.030, "dur": 0.358,
+    "args": {
+      "External id": 279,"Record function id": 0, "Ev Idx": 278
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801961952.013, "dur": 14.913,
+    "args": {
+      "External id": 280,"Record function id": 0, "Ev Idx": 279
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 467678, "tid": 467678,
+    "ts": 503801961953.533, "dur": 1.690,
+    "args": {
+      "External id": 281,"Record function id": 0, "Ev Idx": 280
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801961954.471, "dur": 0.224,
+    "args": {
+      "External id": 282,"Record function id": 0, "Ev Idx": 281
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 467678, "tid": 467678,
+    "ts": 503801961983.189, "dur": 6477.209,
+    "args": {
+      "External id": 283,"Record function id": 0, "Ev Idx": 282
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 467678, "tid": 467678,
+    "ts": 503801961984.114, "dur": 6476.051,
+    "args": {
+      "External id": 284,"Record function id": 0, "Ev Idx": 283
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801961985.130, "dur": 1.726,
+    "args": {
+      "External id": 285,"Record function id": 0, "Ev Idx": 284
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801961987.357, "dur": 6472.050,
+    "args": {
+      "External id": 286,"Record function id": 0, "Ev Idx": 285
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801968487.422, "dur": 14.007,
+    "args": {
+      "External id": 287,"Record function id": 0, "Ev Idx": 286
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801968488.788, "dur": 2.939,
+    "args": {
+      "External id": 288,"Record function id": 0, "Ev Idx": 287
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801968492.284, "dur": 8.962,
+    "args": {
+      "External id": 289,"Record function id": 0, "Ev Idx": 288
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801968492.724, "dur": 8.319,
+    "args": {
+      "External id": 290,"Record function id": 0, "Ev Idx": 289
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801968503.373, "dur": 4.229,
+    "args": {
+      "External id": 291,"Record function id": 0, "Ev Idx": 290
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801968503.664, "dur": 0.925,
+    "args": {
+      "External id": 292,"Record function id": 0, "Ev Idx": 291
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801968504.784, "dur": 2.767,
+    "args": {
+      "External id": 293,"Record function id": 0, "Ev Idx": 292
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801968505.009, "dur": 2.388,
+    "args": {
+      "External id": 294,"Record function id": 0, "Ev Idx": 293
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lstm", "pid": 467678, "tid": 467678,
+    "ts": 503801968519.690, "dur": 96.349,
+    "args": {
+      "External id": 295,"Record function id": 0, "Ev Idx": 294
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cudnn_is_acceptable", "pid": 467678, "tid": 467678,
+    "ts": 503801968520.436, "dur": 0.639,
+    "args": {
+      "External id": 296,"Record function id": 0, "Ev Idx": 295
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801968528.265, "dur": 0.610,
+    "args": {
+      "External id": 297,"Record function id": 0, "Ev Idx": 296
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801968529.275, "dur": 1.858,
+    "args": {
+      "External id": 298,"Record function id": 0, "Ev Idx": 297
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801968529.998, "dur": 0.979,
+    "args": {
+      "External id": 299,"Record function id": 0, "Ev Idx": 298
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_cudnn_rnn", "pid": 467678, "tid": 467678,
+    "ts": 503801968535.152, "dur": 80.247,
+    "args": {
+      "External id": 300,"Record function id": 0, "Ev Idx": 299
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801968536.139, "dur": 1.492,
+    "args": {
+      "External id": 301,"Record function id": 0, "Ev Idx": 300
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801968536.751, "dur": 0.699,
+    "args": {
+      "External id": 302,"Record function id": 0, "Ev Idx": 301
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::contiguous", "pid": 467678, "tid": 467678,
+    "ts": 503801968539.151, "dur": 9.135,
+    "args": {
+      "External id": 303,"Record function id": 0, "Ev Idx": 302
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 467678, "tid": 467678,
+    "ts": 503801968539.638, "dur": 8.538,
+    "args": {
+      "External id": 304,"Record function id": 0, "Ev Idx": 303
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 467678, "tid": 467678,
+    "ts": 503801968540.332, "dur": 1.624,
+    "args": {
+      "External id": 305,"Record function id": 0, "Ev Idx": 304
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801968540.722, "dur": 1.003,
+    "args": {
+      "External id": 306,"Record function id": 0, "Ev Idx": 305
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801968542.443, "dur": 5.591,
+    "args": {
+      "External id": 307,"Record function id": 0, "Ev Idx": 306
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801968548.564, "dur": 1.412,
+    "args": {
+      "External id": 308,"Record function id": 0, "Ev Idx": 307
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801968550.190, "dur": 0.843,
+    "args": {
+      "External id": 309,"Record function id": 0, "Ev Idx": 308
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801968551.229, "dur": 0.649,
+    "args": {
+      "External id": 310,"Record function id": 0, "Ev Idx": 309
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801968562.808, "dur": 0.853,
+    "args": {
+      "External id": 311,"Record function id": 0, "Ev Idx": 310
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801968563.871, "dur": 0.441,
+    "args": {
+      "External id": 312,"Record function id": 0, "Ev Idx": 311
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose_", "pid": 467678, "tid": 467678,
+    "ts": 503801968610.912, "dur": 2.308,
+    "args": {
+      "External id": 313,"Record function id": 0, "Ev Idx": 312
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided_", "pid": 467678, "tid": 467678,
+    "ts": 503801968611.795, "dur": 1.226,
+    "args": {
+      "External id": 314,"Record function id": 0, "Ev Idx": 313
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 467678, "tid": 467678,
+    "ts": 503801968623.795, "dur": 1.863,
+    "args": {
+      "External id": 315,"Record function id": 0, "Ev Idx": 314
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801968624.977, "dur": 0.297,
+    "args": {
+      "External id": 316,"Record function id": 0, "Ev Idx": 315
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801968632.569, "dur": 20.429,
+    "args": {
+      "External id": 317,"Record function id": 0, "Ev Idx": 316
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801968633.241, "dur": 2.424,
+    "args": {
+      "External id": 318,"Record function id": 0, "Ev Idx": 317
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801968633.972, "dur": 0.648,
+    "args": {
+      "External id": 319,"Record function id": 0, "Ev Idx": 318
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801968634.191, "dur": 0.343,
+    "args": {
+      "External id": 320,"Record function id": 0, "Ev Idx": 319
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801968635.948, "dur": 16.619,
+    "args": {
+      "External id": 321,"Record function id": 0, "Ev Idx": 320
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::gelu", "pid": 467678, "tid": 467678,
+    "ts": 503801968656.273, "dur": 4.748,
+    "args": {
+      "External id": 322,"Record function id": 0, "Ev Idx": 321
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801968663.791, "dur": 14.790,
+    "args": {
+      "External id": 323,"Record function id": 0, "Ev Idx": 322
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801968663.956, "dur": 1.166,
+    "args": {
+      "External id": 324,"Record function id": 0, "Ev Idx": 323
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801968664.184, "dur": 0.625,
+    "args": {
+      "External id": 325,"Record function id": 0, "Ev Idx": 324
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801968664.433, "dur": 0.293,
+    "args": {
+      "External id": 326,"Record function id": 0, "Ev Idx": 325
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801968665.289, "dur": 13.116,
+    "args": {
+      "External id": 327,"Record function id": 0, "Ev Idx": 326
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 467678, "tid": 467678,
+    "ts": 503801968666.592, "dur": 1.666,
+    "args": {
+      "External id": 328,"Record function id": 0, "Ev Idx": 327
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801968667.534, "dur": 0.205,
+    "args": {
+      "External id": 329,"Record function id": 0, "Ev Idx": 328
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 467678, "tid": 467678,
+    "ts": 503801968694.208, "dur": 6632.897,
+    "args": {
+      "External id": 330,"Record function id": 0, "Ev Idx": 329
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 467678, "tid": 467678,
+    "ts": 503801968695.174, "dur": 6630.495,
+    "args": {
+      "External id": 331,"Record function id": 0, "Ev Idx": 330
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801968696.184, "dur": 1.806,
+    "args": {
+      "External id": 332,"Record function id": 0, "Ev Idx": 331
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801968698.356, "dur": 6625.214,
+    "args": {
+      "External id": 333,"Record function id": 0, "Ev Idx": 332
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801975391.244, "dur": 34.118,
+    "args": {
+      "External id": 334,"Record function id": 0, "Ev Idx": 333
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801975393.682, "dur": 7.882,
+    "args": {
+      "External id": 335,"Record function id": 0, "Ev Idx": 334
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801975402.959, "dur": 22.323,
+    "args": {
+      "External id": 336,"Record function id": 0, "Ev Idx": 335
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801975404.443, "dur": 20.415,
+    "args": {
+      "External id": 337,"Record function id": 0, "Ev Idx": 336
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801975428.208, "dur": 4.759,
+    "args": {
+      "External id": 338,"Record function id": 0, "Ev Idx": 337
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801975428.427, "dur": 1.278,
+    "args": {
+      "External id": 339,"Record function id": 0, "Ev Idx": 338
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801975429.890, "dur": 3.007,
+    "args": {
+      "External id": 340,"Record function id": 0, "Ev Idx": 339
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801975430.171, "dur": 2.587,
+    "args": {
+      "External id": 341,"Record function id": 0, "Ev Idx": 340
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lstm", "pid": 467678, "tid": 467678,
+    "ts": 503801975471.795, "dur": 165.031,
+    "args": {
+      "External id": 342,"Record function id": 0, "Ev Idx": 341
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cudnn_is_acceptable", "pid": 467678, "tid": 467678,
+    "ts": 503801975474.251, "dur": 1.292,
+    "args": {
+      "External id": 343,"Record function id": 0, "Ev Idx": 342
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801975495.475, "dur": 0.997,
+    "args": {
+      "External id": 344,"Record function id": 0, "Ev Idx": 343
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801975497.986, "dur": 5.651,
+    "args": {
+      "External id": 345,"Record function id": 0, "Ev Idx": 344
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801975499.433, "dur": 3.639,
+    "args": {
+      "External id": 346,"Record function id": 0, "Ev Idx": 345
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_cudnn_rnn", "pid": 467678, "tid": 467678,
+    "ts": 503801975512.950, "dur": 123.046,
+    "args": {
+      "External id": 347,"Record function id": 0, "Ev Idx": 346
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801975515.663, "dur": 18.074,
+    "args": {
+      "External id": 348,"Record function id": 0, "Ev Idx": 347
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801975517.414, "dur": 16.203,
+    "args": {
+      "External id": 349,"Record function id": 0, "Ev Idx": 348
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::contiguous", "pid": 467678, "tid": 467678,
+    "ts": 503801975536.169, "dur": 13.811,
+    "args": {
+      "External id": 350,"Record function id": 0, "Ev Idx": 349
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 467678, "tid": 467678,
+    "ts": 503801975537.456, "dur": 12.453,
+    "args": {
+      "External id": 351,"Record function id": 0, "Ev Idx": 350
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 467678, "tid": 467678,
+    "ts": 503801975538.985, "dur": 1.878,
+    "args": {
+      "External id": 352,"Record function id": 0, "Ev Idx": 351
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801975539.459, "dur": 1.115,
+    "args": {
+      "External id": 353,"Record function id": 0, "Ev Idx": 352
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801975541.366, "dur": 8.307,
+    "args": {
+      "External id": 354,"Record function id": 0, "Ev Idx": 353
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801975550.345, "dur": 1.926,
+    "args": {
+      "External id": 355,"Record function id": 0, "Ev Idx": 354
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801975552.509, "dur": 0.842,
+    "args": {
+      "External id": 356,"Record function id": 0, "Ev Idx": 355
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801975553.650, "dur": 0.728,
+    "args": {
+      "External id": 357,"Record function id": 0, "Ev Idx": 356
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801975568.570, "dur": 0.777,
+    "args": {
+      "External id": 358,"Record function id": 0, "Ev Idx": 357
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801975569.593, "dur": 0.716,
+    "args": {
+      "External id": 359,"Record function id": 0, "Ev Idx": 358
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose_", "pid": 467678, "tid": 467678,
+    "ts": 503801975629.788, "dur": 3.591,
+    "args": {
+      "External id": 360,"Record function id": 0, "Ev Idx": 359
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided_", "pid": 467678, "tid": 467678,
+    "ts": 503801975630.865, "dur": 2.206,
+    "args": {
+      "External id": 361,"Record function id": 0, "Ev Idx": 360
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 467678, "tid": 467678,
+    "ts": 503801975650.019, "dur": 3.371,
+    "args": {
+      "External id": 362,"Record function id": 0, "Ev Idx": 361
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801975651.987, "dur": 0.388,
+    "args": {
+      "External id": 363,"Record function id": 0, "Ev Idx": 362
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801975662.664, "dur": 27.896,
+    "args": {
+      "External id": 364,"Record function id": 0, "Ev Idx": 363
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801975663.346, "dur": 2.254,
+    "args": {
+      "External id": 365,"Record function id": 0, "Ev Idx": 364
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801975663.936, "dur": 0.608,
+    "args": {
+      "External id": 366,"Record function id": 0, "Ev Idx": 365
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801975664.144, "dur": 0.312,
+    "args": {
+      "External id": 367,"Record function id": 0, "Ev Idx": 366
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801975666.265, "dur": 23.835,
+    "args": {
+      "External id": 368,"Record function id": 0, "Ev Idx": 367
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::gelu", "pid": 467678, "tid": 467678,
+    "ts": 503801975694.750, "dur": 6.696,
+    "args": {
+      "External id": 369,"Record function id": 0, "Ev Idx": 368
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801975704.545, "dur": 22.264,
+    "args": {
+      "External id": 370,"Record function id": 0, "Ev Idx": 369
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801975704.776, "dur": 1.449,
+    "args": {
+      "External id": 371,"Record function id": 0, "Ev Idx": 370
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801975704.991, "dur": 0.632,
+    "args": {
+      "External id": 372,"Record function id": 0, "Ev Idx": 371
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801975705.243, "dur": 0.277,
+    "args": {
+      "External id": 373,"Record function id": 0, "Ev Idx": 372
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801975706.415, "dur": 20.213,
+    "args": {
+      "External id": 374,"Record function id": 0, "Ev Idx": 373
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 467678, "tid": 467678,
+    "ts": 503801975708.285, "dur": 3.644,
+    "args": {
+      "External id": 375,"Record function id": 0, "Ev Idx": 374
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801975710.688, "dur": 0.383,
+    "args": {
+      "External id": 376,"Record function id": 0, "Ev Idx": 375
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 467678, "tid": 467678,
+    "ts": 503801975749.252, "dur": 6593.469,
+    "args": {
+      "External id": 377,"Record function id": 0, "Ev Idx": 376
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 467678, "tid": 467678,
+    "ts": 503801975750.748, "dur": 6590.990,
+    "args": {
+      "External id": 378,"Record function id": 0, "Ev Idx": 377
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801975752.338, "dur": 2.189,
+    "args": {
+      "External id": 379,"Record function id": 0, "Ev Idx": 378
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801975754.936, "dur": 6581.512,
+    "args": {
+      "External id": 380,"Record function id": 0, "Ev Idx": 379
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801982419.718, "dur": 48.360,
+    "args": {
+      "External id": 381,"Record function id": 0, "Ev Idx": 380
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801982423.637, "dur": 11.679,
+    "args": {
+      "External id": 382,"Record function id": 0, "Ev Idx": 381
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801982437.462, "dur": 30.317,
+    "args": {
+      "External id": 383,"Record function id": 0, "Ev Idx": 382
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801982439.357, "dur": 27.602,
+    "args": {
+      "External id": 384,"Record function id": 0, "Ev Idx": 383
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801982474.198, "dur": 15.193,
+    "args": {
+      "External id": 385,"Record function id": 0, "Ev Idx": 384
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801982475.491, "dur": 3.761,
+    "args": {
+      "External id": 386,"Record function id": 0, "Ev Idx": 385
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801982480.254, "dur": 8.896,
+    "args": {
+      "External id": 387,"Record function id": 0, "Ev Idx": 386
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801982481.403, "dur": 7.063,
+    "args": {
+      "External id": 388,"Record function id": 0, "Ev Idx": 387
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lstm", "pid": 467678, "tid": 467678,
+    "ts": 503801982519.037, "dur": 237.871,
+    "args": {
+      "External id": 389,"Record function id": 0, "Ev Idx": 388
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cudnn_is_acceptable", "pid": 467678, "tid": 467678,
+    "ts": 503801982521.595, "dur": 1.724,
+    "args": {
+      "External id": 390,"Record function id": 0, "Ev Idx": 389
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801982541.716, "dur": 2.585,
+    "args": {
+      "External id": 391,"Record function id": 0, "Ev Idx": 390
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801982546.298, "dur": 5.756,
+    "args": {
+      "External id": 392,"Record function id": 0, "Ev Idx": 391
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801982548.706, "dur": 3.094,
+    "args": {
+      "External id": 393,"Record function id": 0, "Ev Idx": 392
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_cudnn_rnn", "pid": 467678, "tid": 467678,
+    "ts": 503801982560.863, "dur": 194.627,
+    "args": {
+      "External id": 394,"Record function id": 0, "Ev Idx": 393
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801982564.392, "dur": 5.170,
+    "args": {
+      "External id": 395,"Record function id": 0, "Ev Idx": 394
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801982566.548, "dur": 2.567,
+    "args": {
+      "External id": 396,"Record function id": 0, "Ev Idx": 395
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::contiguous", "pid": 467678, "tid": 467678,
+    "ts": 503801982573.430, "dur": 31.794,
+    "args": {
+      "External id": 397,"Record function id": 0, "Ev Idx": 396
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 467678, "tid": 467678,
+    "ts": 503801982575.387, "dur": 29.728,
+    "args": {
+      "External id": 398,"Record function id": 0, "Ev Idx": 397
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 467678, "tid": 467678,
+    "ts": 503801982577.782, "dur": 5.300,
+    "args": {
+      "External id": 399,"Record function id": 0, "Ev Idx": 398
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801982579.047, "dur": 3.565,
+    "args": {
+      "External id": 400,"Record function id": 0, "Ev Idx": 399
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801982584.435, "dur": 20.213,
+    "args": {
+      "External id": 401,"Record function id": 0, "Ev Idx": 400
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801982606.283, "dur": 4.519,
+    "args": {
+      "External id": 402,"Record function id": 0, "Ev Idx": 401
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801982611.688, "dur": 2.640,
+    "args": {
+      "External id": 403,"Record function id": 0, "Ev Idx": 402
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801982615.108, "dur": 2.313,
+    "args": {
+      "External id": 404,"Record function id": 0, "Ev Idx": 403
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801982640.018, "dur": 3.157,
+    "args": {
+      "External id": 405,"Record function id": 0, "Ev Idx": 404
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801982644.154, "dur": 1.692,
+    "args": {
+      "External id": 406,"Record function id": 0, "Ev Idx": 405
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose_", "pid": 467678, "tid": 467678,
+    "ts": 503801982743.827, "dur": 6.530,
+    "args": {
+      "External id": 407,"Record function id": 0, "Ev Idx": 406
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided_", "pid": 467678, "tid": 467678,
+    "ts": 503801982746.139, "dur": 3.765,
+    "args": {
+      "External id": 408,"Record function id": 0, "Ev Idx": 407
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 467678, "tid": 467678,
+    "ts": 503801982779.218, "dur": 4.656,
+    "args": {
+      "External id": 409,"Record function id": 0, "Ev Idx": 408
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801982781.890, "dur": 1.010,
+    "args": {
+      "External id": 410,"Record function id": 0, "Ev Idx": 409
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801982802.906, "dur": 60.824,
+    "args": {
+      "External id": 411,"Record function id": 0, "Ev Idx": 410
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801982804.549, "dur": 6.842,
+    "args": {
+      "External id": 412,"Record function id": 0, "Ev Idx": 411
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801982806.349, "dur": 2.435,
+    "args": {
+      "External id": 413,"Record function id": 0, "Ev Idx": 412
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801982807.417, "dur": 1.017,
+    "args": {
+      "External id": 414,"Record function id": 0, "Ev Idx": 413
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801982812.806, "dur": 49.704,
+    "args": {
+      "External id": 415,"Record function id": 0, "Ev Idx": 414
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::gelu", "pid": 467678, "tid": 467678,
+    "ts": 503801982878.375, "dur": 15.209,
+    "args": {
+      "External id": 416,"Record function id": 0, "Ev Idx": 415
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801982904.374, "dur": 48.943,
+    "args": {
+      "External id": 417,"Record function id": 0, "Ev Idx": 416
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801982905.163, "dur": 4.548,
+    "args": {
+      "External id": 418,"Record function id": 0, "Ev Idx": 417
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801982906.049, "dur": 2.402,
+    "args": {
+      "External id": 419,"Record function id": 0, "Ev Idx": 418
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801982907.081, "dur": 0.993,
+    "args": {
+      "External id": 420,"Record function id": 0, "Ev Idx": 419
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801982910.541, "dur": 42.010,
+    "args": {
+      "External id": 421,"Record function id": 0, "Ev Idx": 420
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 467678, "tid": 467678,
+    "ts": 503801982915.910, "dur": 4.809,
+    "args": {
+      "External id": 422,"Record function id": 0, "Ev Idx": 421
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801982918.513, "dur": 0.702,
+    "args": {
+      "External id": 423,"Record function id": 0, "Ev Idx": 422
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::to", "pid": 467678, "tid": 467678,
+    "ts": 503801982988.784, "dur": 6469.695,
+    "args": {
+      "External id": 424,"Record function id": 0, "Ev Idx": 423
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_to_copy", "pid": 467678, "tid": 467678,
+    "ts": 503801982992.083, "dur": 6465.580,
+    "args": {
+      "External id": 425,"Record function id": 0, "Ev Idx": 424
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801982995.479, "dur": 4.684,
+    "args": {
+      "External id": 426,"Record function id": 0, "Ev Idx": 425
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801983001.314, "dur": 6451.013,
+    "args": {
+      "External id": 427,"Record function id": 0, "Ev Idx": 426
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801989524.234, "dur": 51.878,
+    "args": {
+      "External id": 428,"Record function id": 0, "Ev Idx": 427
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801989527.654, "dur": 11.237,
+    "args": {
+      "External id": 429,"Record function id": 0, "Ev Idx": 428
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801989540.262, "dur": 35.565,
+    "args": {
+      "External id": 430,"Record function id": 0, "Ev Idx": 429
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801989541.311, "dur": 34.254,
+    "args": {
+      "External id": 431,"Record function id": 0, "Ev Idx": 430
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zeros", "pid": 467678, "tid": 467678,
+    "ts": 503801989579.066, "dur": 4.547,
+    "args": {
+      "External id": 432,"Record function id": 0, "Ev Idx": 431
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801989579.330, "dur": 1.102,
+    "args": {
+      "External id": 433,"Record function id": 0, "Ev Idx": 432
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::zero_", "pid": 467678, "tid": 467678,
+    "ts": 503801989580.675, "dur": 2.885,
+    "args": {
+      "External id": 434,"Record function id": 0, "Ev Idx": 433
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::fill_", "pid": 467678, "tid": 467678,
+    "ts": 503801989580.896, "dur": 2.511,
+    "args": {
+      "External id": 435,"Record function id": 0, "Ev Idx": 434
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::lstm", "pid": 467678, "tid": 467678,
+    "ts": 503801989604.607, "dur": 163.288,
+    "args": {
+      "External id": 436,"Record function id": 0, "Ev Idx": 435
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::cudnn_is_acceptable", "pid": 467678, "tid": 467678,
+    "ts": 503801989606.089, "dur": 1.500,
+    "args": {
+      "External id": 437,"Record function id": 0, "Ev Idx": 436
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801989623.545, "dur": 0.659,
+    "args": {
+      "External id": 438,"Record function id": 0, "Ev Idx": 437
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801989624.968, "dur": 4.368,
+    "args": {
+      "External id": 439,"Record function id": 0, "Ev Idx": 438
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::set_", "pid": 467678, "tid": 467678,
+    "ts": 503801989626.792, "dur": 2.315,
+    "args": {
+      "External id": 440,"Record function id": 0, "Ev Idx": 439
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::_cudnn_rnn", "pid": 467678, "tid": 467678,
+    "ts": 503801989636.610, "dur": 130.559,
+    "args": {
+      "External id": 441,"Record function id": 0, "Ev Idx": 440
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801989639.060, "dur": 4.773,
+    "args": {
+      "External id": 442,"Record function id": 0, "Ev Idx": 441
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801989641.073, "dur": 2.515,
+    "args": {
+      "External id": 443,"Record function id": 0, "Ev Idx": 442
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::contiguous", "pid": 467678, "tid": 467678,
+    "ts": 503801989646.525, "dur": 17.824,
+    "args": {
+      "External id": 444,"Record function id": 0, "Ev Idx": 443
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::clone", "pid": 467678, "tid": 467678,
+    "ts": 503801989647.776, "dur": 16.473,
+    "args": {
+      "External id": 445,"Record function id": 0, "Ev Idx": 444
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty_like", "pid": 467678, "tid": 467678,
+    "ts": 503801989649.536, "dur": 2.038,
+    "args": {
+      "External id": 446,"Record function id": 0, "Ev Idx": 445
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801989650.010, "dur": 1.025,
+    "args": {
+      "External id": 447,"Record function id": 0, "Ev Idx": 446
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::copy_", "pid": 467678, "tid": 467678,
+    "ts": 503801989652.725, "dur": 11.374,
+    "args": {
+      "External id": 448,"Record function id": 0, "Ev Idx": 447
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801989664.861, "dur": 1.653,
+    "args": {
+      "External id": 449,"Record function id": 0, "Ev Idx": 448
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801989666.762, "dur": 0.912,
+    "args": {
+      "External id": 450,"Record function id": 0, "Ev Idx": 449
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801989667.875, "dur": 0.763,
+    "args": {
+      "External id": 451,"Record function id": 0, "Ev Idx": 450
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801989683.952, "dur": 0.792,
+    "args": {
+      "External id": 452,"Record function id": 0, "Ev Idx": 451
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::empty", "pid": 467678, "tid": 467678,
+    "ts": 503801989684.956, "dur": 0.603,
+    "args": {
+      "External id": 453,"Record function id": 0, "Ev Idx": 452
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose_", "pid": 467678, "tid": 467678,
+    "ts": 503801989760.381, "dur": 3.546,
+    "args": {
+      "External id": 454,"Record function id": 0, "Ev Idx": 453
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided_", "pid": 467678, "tid": 467678,
+    "ts": 503801989761.549, "dur": 2.259,
+    "args": {
+      "External id": 455,"Record function id": 0, "Ev Idx": 454
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::select", "pid": 467678, "tid": 467678,
+    "ts": 503801989782.971, "dur": 2.694,
+    "args": {
+      "External id": 456,"Record function id": 0, "Ev Idx": 455
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801989784.600, "dur": 0.526,
+    "args": {
+      "External id": 457,"Record function id": 0, "Ev Idx": 456
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801989800.446, "dur": 47.045,
+    "args": {
+      "External id": 458,"Record function id": 0, "Ev Idx": 457
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801989802.186, "dur": 5.019,
+    "args": {
+      "External id": 459,"Record function id": 0, "Ev Idx": 458
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801989804.128, "dur": 0.691,
+    "args": {
+      "External id": 460,"Record function id": 0, "Ev Idx": 459
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801989804.381, "dur": 0.345,
+    "args": {
+      "External id": 461,"Record function id": 0, "Ev Idx": 460
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801989808.437, "dur": 38.260,
+    "args": {
+      "External id": 462,"Record function id": 0, "Ev Idx": 461
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::gelu", "pid": 467678, "tid": 467678,
+    "ts": 503801989853.195, "dur": 7.915,
+    "args": {
+      "External id": 463,"Record function id": 0, "Ev Idx": 462
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::linear", "pid": 467678, "tid": 467678,
+    "ts": 503801989864.611, "dur": 29.873,
+    "args": {
+      "External id": 464,"Record function id": 0, "Ev Idx": 463
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::t", "pid": 467678, "tid": 467678,
+    "ts": 503801989864.775, "dur": 1.397,
+    "args": {
+      "External id": 465,"Record function id": 0, "Ev Idx": 464
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::transpose", "pid": 467678, "tid": 467678,
+    "ts": 503801989865.012, "dur": 0.697,
+    "args": {
+      "External id": 466,"Record function id": 0, "Ev Idx": 465
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801989865.285, "dur": 0.350,
+    "args": {
+      "External id": 467,"Record function id": 0, "Ev Idx": 466
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::addmm", "pid": 467678, "tid": 467678,
+    "ts": 503801989866.340, "dur": 27.974,
+    "args": {
+      "External id": 468,"Record function id": 0, "Ev Idx": 467
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::expand", "pid": 467678, "tid": 467678,
+    "ts": 503801989872.483, "dur": 3.955,
+    "args": {
+      "External id": 469,"Record function id": 0, "Ev Idx": 468
+    }
+  },
+  {
+    "ph": "X", "cat": "cpu_op", "name": "aten::as_strided", "pid": 467678, "tid": 467678,
+    "ts": 503801989874.974, "dur": 0.266,
+    "args": {
+      "External id": 470,"Record function id": 0, "Ev Idx": 469
+    }
+  },
+  {
+    "name": "process_name", "ph": "M", "ts": 503801923451.045, "pid": 467678, "tid": 0,
+    "args": {
+      "name": "python"
+    }
+  },
+  {
+    "name": "process_labels", "ph": "M", "ts": 503801923451.045, "pid": 467678, "tid": 0,
+    "args": {
+      "labels": "CPU"
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 503801923451.045, "pid": 467678, "tid": 0,
+    "args": {
+      "sort_index": 467678
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 503801923451.045, "pid": 467678, "tid": 467678,
+    "args": {
+      "name": "thread 467678 (python)"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 503801923451.045, "pid": 467678, "tid": 467678,
+    "args": {
+      "sort_index": 467678
+    }
+  },
+  {
+    "name": "thread_name", "ph": "M", "ts": 503801923451.045, "pid": 467678, "tid": 467678,
+    "args": {
+      "name": "thread 467678 (python)"
+    }
+  },
+  {
+    "name": "thread_sort_index", "ph": "M", "ts": 503801923451.045, "pid": 467678, "tid": 467678,
+    "args": {
+      "sort_index": 467678
+    }
+  },
+  {
+    "ph": "X", "cat": "Trace", "ts": 503801923230.198, "dur": 73174.637,
+    "pid": "Spans", "tid": "PyTorch Profiler",
+    "name": "PyTorch Profiler (0)",
+    "args": {
+      "Op count": 0
+    }
+  },
+  {
+    "name": "process_sort_index", "ph": "M", "ts": 503801923230.198,
+    "pid": "Spans", "tid": 0,
+    "args": {
+      "sort_index": 536870912
+    }
+  },
+  {
+    "name": "Iteration Start: PyTorch Profiler", "ph": "i", "s": "g",
+    "pid": "Traces", "tid": "Trace PyTorch Profiler", "ts": 503801923230.198
+  },
+  {
+    "name": "Record Window End", "ph": "i", "s": "g",
+    "pid": "", "tid": "", "ts": 503801996716.477
+  }
+  ],
+  "traceName": "/home/lnx-141209/Desktop/cudalpha/traces/forecaster_baseline.json"
+}

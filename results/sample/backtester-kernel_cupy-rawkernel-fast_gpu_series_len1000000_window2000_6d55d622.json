@@ -1,0 +1,30 @@
+{
+  "workload": "backtester-kernel",
+  "device": "gpu",
+  "backend": "cupy-rawkernel-fast",
+  "size": {
+    "series_len": 1000000,
+    "window": 2000
+  },
+  "median_ms": 0.161585999194358,
+  "p95_ms": 0.17438800023228396,
+  "std_ms": 0.006747568423300977,
+  "throughput": null,
+  "peak_mem_mb": null,
+  "gpu_util_pct": null,
+  "passed_validation": true,
+  "validation_detail": {},
+  "speedup_vs_cpu": null,
+  "job_id": "local",
+  "run_id": "6d55d622",
+  "timestamp": 1783476060.8598604,
+  "env": {
+    "python": "3.11.15",
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "git_sha": "unknown",
+    "nvidia_driver": "580.159.03",
+    "torch": "2.11.0+cu128",
+    "torch_cuda": "12.8",
+    "gpu_name": "NVIDIA GeForce RTX 5060 Laptop GPU"
+  }
+}

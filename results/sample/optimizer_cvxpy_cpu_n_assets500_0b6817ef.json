@@ -1,0 +1,29 @@
+{
+  "workload": "optimizer",
+  "device": "cpu",
+  "backend": "cvxpy",
+  "size": {
+    "n_assets": 500
+  },
+  "median_ms": 143.1048929998724,
+  "p95_ms": 167.00569299973722,
+  "std_ms": 15.314905089534642,
+  "throughput": 3493.940629971652,
+  "peak_mem_mb": null,
+  "gpu_util_pct": null,
+  "passed_validation": null,
+  "validation_detail": {},
+  "speedup_vs_cpu": null,
+  "job_id": "local",
+  "run_id": "0b6817ef",
+  "timestamp": 1783475288.4204412,
+  "env": {
+    "python": "3.11.15",
+    "platform": "Linux-6.17.0-35-generic-x86_64-with-glibc2.39",
+    "git_sha": "unknown",
+    "nvidia_driver": "580.159.03",
+    "torch": "2.11.0+cu128",
+    "torch_cuda": "12.8",
+    "gpu_name": "NVIDIA GeForce RTX 5060 Laptop GPU"
+  }
+}
