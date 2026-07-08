@@ -65,7 +65,7 @@ Three workloads, deliberately **unequal in depth** — each carries one story:
 |---|---|---|
 | **Forecaster** (PyTorch) | Deepest profiling story | Inference profiled with torch.profiler + Nsight; optimized via pinned memory, batching, mixed precision, `torch.compile`, CUDA graphs (**bottleneck #1**). |
 | **Backtester** (CuPy) | Custom-kernel story | Vectorized GPU baseline, then a hand-written rolling-mean kernel via CuPy `RawKernel` (real CUDA C), profiled naive→fast (**bottleneck #2**). |
-| **Optimizer** (Markowitz QP) | Benchmark / validation story | CVXPY CPU baseline vs cuOpt GPU; a scaling study reporting the solve-time *crossover*, not an assumed winner. |
+| **Optimizer** (Markowitz QP) | Benchmark / validation story | CVXPY (CLARABEL) CPU baseline vs a GPU QP solver — currently a **CuPy Frank–Wolfe** simplex solver (`cupy-fw`); the cuOpt direct-QP path is **stubbed/planned**. A scaling study reporting the solve-time *crossover*, not an assumed winner. |
 
 ---
 
@@ -78,7 +78,7 @@ CUDAlpha makes a small number of explicit, falsifiable bets. Each is paired with
 | H1 | Warmup-discarded **median / p95 / std** over N steady-state trials gives a stable number where single-shot timing would be dominated by JIT, allocator, and clock-ramp noise | [`cudalpha/benchmark.py`](cudalpha/benchmark.py) `time_callable`; `tests/test_benchmark.py`; every `make bench` run | Harness implemented; distribution reported per artifact |
 | H2 | The naive re-sum kernel (O(window) cached reads/output) wins at **small** windows; a hand-written O(1)-per-output **prefix-sum `RawKernel`** overtakes it past a window **crossover**, once its fixed scan is amortized | [`cudalpha/workloads/kernels.py`](cudalpha/workloads/kernels.py) (`rolling_mean_naive` → `rolling_mean_fast`); `make bench-kernel-sweep` + Nsight Compute | Both kernels implemented and validated; the sweep locates the crossover (naive faster ≤~100, prefix-sum faster at large windows) |
 | H3 | Forecaster inference is **host-bound** (H2D copies / small batches), so pinned memory + batching + AMP + CUDA graphs raise GPU utilization more than raw FLOP tuning would | [`cudalpha/workloads/forecaster.py`](cudalpha/workloads/forecaster.py) optimization levers; `profiling/` torch.profiler + Nsight recipes | Levers implemented as A/B flags; util delta is a GPU-host measurement |
-| H4 | cuOpt's barrier QP has **fixed interior-point overhead**, so CPU (CVXPY) wins on small portfolios and GPU only pulls ahead past a crossover size | [`cudalpha/workloads/optimizer.py`](cudalpha/workloads/optimizer.py); `make bench-optimizer` scaling study | Both paths implemented; the study reports the crossover rather than pre-declaring a winner |
+| H4 | A barrier/interior-point QP has **fixed per-solve overhead**, so CPU (CVXPY/CLARABEL) wins on small portfolios and the GPU only pulls ahead past a crossover size | [`cudalpha/workloads/optimizer.py`](cudalpha/workloads/optimizer.py); `make bench-optimizer` scaling study | Confirmed with the shipped **CuPy Frank–Wolfe** GPU solver (crossover 200–500 assets); the cuOpt path is stubbed, not required for the result |
 | H5 | **fp16 mixed-precision** output deviates from an fp32 CPU reference within a *bounded, documented* tolerance — so it is validatable, not "broken" | [`cudalpha/validate.py`](cudalpha/validate.py) fp16 path; `tests/test_validate.py` | Implemented; fp16 uses loose tolerances and records the deviation |
 | H6 | The full result is **reproducible from the repo alone** — pinned CPU deps, fixed seed, and programmatically captured hardware/software metadata stamped on every artifact | [`cudalpha/config.py`](cudalpha/config.py) `set_seed`, [`cudalpha/metrics.py`](cudalpha/metrics.py) `capture_environment`; `tests/test_metrics.py` | Implemented; every `BenchmarkResult` embeds its `env` block |
 
@@ -173,9 +173,9 @@ The harness is framework-agnostic: every workload exposes a prepared, zero-arg u
 |---|---|---|---|
 | Forecaster | PyTorch (`cpu`) LSTM+head inference | PyTorch (`cuda`) + AMP / `torch.compile` / CUDA graphs / pinned H2D | batch size |
 | Backtester | NumPy cumsum SMA crossover | CuPy vectorized baseline; CuPy `RawKernel` (naive → prefix-sum fast) | series length |
-| Optimizer | CVXPY (OSQP/ECOS) Markowitz QP | cuOpt barrier QP (SDK direct interface) | number of assets |
+| Optimizer | CVXPY (CLARABEL) Markowitz QP | CuPy Frank–Wolfe simplex solver (`cupy-fw`); cuOpt direct-QP path stubbed | number of assets |
 
-**cuOpt note:** cuOpt solves QP of the form `min ½ xᵀQx + cᵀx` with linear constraints and bounds; the barrier (interior-point) method is currently the only method that supports QPs. It is called through **cuOpt's Python SDK / direct QP interface — not through CVXPY or another modeling language**. Mind the ½ convention on `Q` so the two objectives are comparable. Whether GPU beats CPU depends on portfolio size and solver overhead; the study reports the crossover.
+**Optimizer GPU path — status:** the shipped GPU solver is a **CuPy Frank–Wolfe** conditional-gradient method over the probability simplex (`cupy-fw` in the scoreboard) — genuinely GPU-accelerated (the O(n²) `cov @ x` matvec runs on-device) and CPU-vs-GPU validated. The **cuOpt direct-QP path is stubbed** (`_cuopt_solve` raises `NotImplementedError`) and is a planned upgrade, not a claimed result. When wired, cuOpt would solve `min ½ xᵀQx + cᵀx` (barrier method, its only QP method) through its Python SDK — minding the ½ convention on `Q`. The crossover story (H4) holds regardless of which GPU solver runs.
 
 ### Results schema
 
@@ -240,6 +240,8 @@ The test suite (`tests/`, run by `make test`) is **CPU-only** by design: it veri
 ## Results (current snapshot)
 
 Every number below is **produced by a `make` target and validated CPU-vs-GPU** (each row's run is `valid=True` or it is marked failed). The scoreboard is what `make aggregate` prints from `results/*.json`.
+
+> **The evidence is checked in.** These are not aspirational numbers: the raw per-run artifacts from this RTX 5060 run are committed under [`results/sample/`](results/sample/) (46 JSONs + `summary.parquet` + `SCOREBOARD.md`), the two `torch.profiler` traces under [`traces/sample/`](traces/sample/), and the measured before/after tables in [`profiling/RESULTS.md`](profiling/RESULTS.md). Live runs write to the git-ignored `results/`; `results/sample/` is the tracked snapshot.
 
 > **Measured on:** NVIDIA GeForce RTX 5060 Laptop GPU (Blackwell, 8 GB), driver 580.159.03 / CUDA 13.0; PyTorch (cu128), CuPy (CUDA 12.x), CVXPY 1.5 / CLARABEL; Python 3.11. Timings are steady-state medians over 30 trials after warmup. Your absolute numbers will differ by GPU; the *shape* of each result (the crossovers) is the point.
 
@@ -343,7 +345,7 @@ cudalpha/                harness + workloads (the product)
     ├── forecaster.py    PyTorch inference + optimization levers (bottleneck #1)
     ├── backtester.py    NumPy / CuPy / RawKernel SMA-crossover paths
     ├── kernels.py       custom CUDA C RawKernels (naive + prefix-sum fast)
-    └── optimizer.py     CVXPY vs cuOpt Markowitz QP scaling study
+    └── optimizer.py     CVXPY vs CuPy Frank–Wolfe QP study (cuOpt path stubbed)
 bench/                   run_all.py (sweep driver) + aggregate.py
 tests/                   CPU-only pytest suite (harness, validation, schema, math)
 slurm/                   sweep.sbatch (job array) + setup notes
@@ -438,7 +440,7 @@ make aggregate                   # collect the array's artifacts
 
 ## Positioning
 
-This is **not** a trading system, and the finance is simplified on purpose — the demonstrated skill is making GPU workloads fast and *proving it with data*: containerized, Slurm-orchestrated, statistically benchmarked, CPU-vs-GPU validated, Nsight/PyTorch profiled, with a genuine custom CUDA kernel and a cuOpt QP scaling study, visualized in a Python-first Dash dashboard.
+This is **not** a trading system, and the finance is simplified on purpose — the demonstrated skill is making GPU workloads fast and *proving it with data*: containerized, Slurm-orchestrated, statistically benchmarked, CPU-vs-GPU validated, Nsight/PyTorch profiled, with a genuine custom CUDA kernel and a GPU QP scaling study (CuPy Frank–Wolfe; cuOpt path stubbed), visualized in a Python-first Dash dashboard.
 
 ## License
 
