@@ -1,0 +1,31 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  cpu-tests:
+    name: CPU-only tests (no GPU)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      # Install the CPU build of torch first so CI doesn't pull the large CUDA
+      # wheel; the pinned version then satisfies requirements.txt.
+      - name: Install CPU PyTorch
+        run: pip install torch==2.3.1 --index-url https://download.pytorch.org/whl/cpu
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Byte-compile all sources
+        run: python -m py_compile cudalpha/*.py cudalpha/workloads/*.py bench/*.py dashboard/*.py dashboard/pages/*.py
+
+      - name: Run CPU-only test suite
+        run: pytest -q
