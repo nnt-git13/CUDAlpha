@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+results/*.json
+results/*.parquet
+traces/*.nsys-rep
+traces/*.sqlite
+traces/*.qdrep
+traces/*.json
+*.ncu-rep
+.DS_Store
+.ipynb_checkpoints/
