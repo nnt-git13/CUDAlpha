@@ -6,9 +6,10 @@
 <p align="center"><em>A measurement-first GPU performance-engineering testbed: one reproducible harness from synthetic market data to profiled, validated CPU-vs-GPU speedups</em></p>
 
 <p align="center">
+  <a href="https://github.com/nnt-git13/CUDAlpha/actions/workflows/tests.yml"><img src="https://github.com/nnt-git13/CUDAlpha/actions/workflows/tests.yml/badge.svg" alt="CPU-only tests" /></a>
   <img src="https://img.shields.io/badge/Workloads-Forecast%20%7C%20Backtest%20%7C%20Optimize-0f766e" alt="Three workloads" />
   <img src="https://img.shields.io/badge/GPU-CUDA%2012.x-334155" alt="CUDA 12.x" />
-  <img src="https://img.shields.io/badge/Frameworks-PyTorch%20%7C%20CuPy%20%7C%20cuOpt-0f766e" alt="PyTorch, CuPy, cuOpt" />
+  <img src="https://img.shields.io/badge/Frameworks-PyTorch%20%7C%20CuPy%20%7C%20CVXPY-0f766e" alt="PyTorch, CuPy, CVXPY" />
   <img src="https://img.shields.io/badge/Custom%20kernel-CuPy%20RawKernel-334155" alt="CuPy RawKernel" />
   <img src="https://img.shields.io/badge/Orchestration-Slurm%20job%20array-0f766e" alt="Slurm job array" />
   <img src="https://img.shields.io/badge/Containers-Docker%20%2B%20NVIDIA%20Toolkit-334155" alt="Docker + NVIDIA Container Toolkit" />
@@ -51,7 +52,7 @@ CUDAlpha holds one shape fixed (three workloads of deliberately unequal depth) a
 
 ```
 synthetic GBM market data
-  → workload CPU baseline + GPU path (PyTorch / CuPy / cuOpt)
+  → workload CPU baseline + GPU path (PyTorch / CuPy; optimizer via CuPy Frank–Wolfe, cuOpt planned)
   → statistical benchmark harness (warmup discard, median / p95 / std, mem + util)
   → CPU-vs-GPU validation (fp16 handled explicitly, not as a failure)
   → one JSON artifact per (workload, device, backend, size) in results/
@@ -141,7 +142,7 @@ Selected references:
 3. [CuPy `RawKernel` documentation](https://docs.cupy.dev/en/stable/user_guide/kernel.html) — runtime NVRTC compilation of CUDA C from Python.
 4. [NVIDIA Nsight Compute](https://developer.nvidia.com/nsight-compute) — the per-kernel memory-throughput / occupancy view used for bottleneck #2.
 5. [NVIDIA Nsight Systems](https://developer.nvidia.com/nsight-systems) and [`torch.profiler`](https://pytorch.org/docs/stable/profiler.html) — the timeline / operator view used for bottleneck #1.
-6. [NVIDIA cuOpt](https://developer.nvidia.com/cuopt) — the GPU QP (barrier) solver benchmarked against CVXPY.
+6. [NVIDIA cuOpt](https://developer.nvidia.com/cuopt) — the GPU QP (barrier) solver the optimizer's cuOpt path targets (currently stubbed; the shipped GPU solver is CuPy Frank–Wolfe).
 7. [Slurm `sbatch --array`](https://slurm.schedmd.com/job_array.html) — the job-array orchestration model this sweep uses.
 
 ---
@@ -366,7 +367,7 @@ Stated plainly:
 - **GPU numbers require a GPU host.** The test suite and CPU baselines run anywhere; the speedups, utilization, peak-memory figures, and Nsight traces are produced on a CUDA machine. This checkout does not embed GPU results — it embeds the commands that produce them.
 - **The finance is intentionally simplified.** This is not a trading system; the workloads are realistic GPU *loads to measure*, not models meant to make money. Synthetic GBM data stands in for market data so the pipeline stays seeded and network-free.
 - **GPU libraries are not pinned.** `cupy` and `nvidia-cuopt` are environment-specific (CUDA major version, compute capability) and are installed to match your host, so their exact versions are not fixed in `requirements.txt`.
-- **cuOpt QP path may need a fallback.** cuOpt's QP interface and availability vary by version/GPU; the optimizer documents a CuPy interior-point fallback and adjusts its claim accordingly if cuOpt QP is unavailable.
+- **cuOpt QP path is stubbed, not benchmarked.** `_cuopt_solve` raises `NotImplementedError`, so the shipped GPU optimizer is the CuPy Frank–Wolfe solver (`cupy-fw`) — a genuine, validated GPU solver. Wiring cuOpt's direct-QP interface (which varies by version/GPU) is a planned upgrade; H4's crossover result does not depend on it.
 - **Utilization sampling is coarse.** `nvidia-smi` polling gives the before/after utilization story; the fine-grained view is Nsight, captured separately.
 - **Slurm is simulated locally.** The sweep is designed for a job array; running it against a local `slurm-docker-cluster` demonstrates the workflow but is not a real HPC deployment unless submitted on one.
 - **Windows is WSL2-only.** Native Windows is not a target (CUDA tooling, containers, and Slurm assume Linux); see [`docs/WINDOWS.md`](docs/WINDOWS.md).
