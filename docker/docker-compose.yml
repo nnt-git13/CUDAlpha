@@ -1,0 +1,41 @@
+# Two profiles so you run the heavy GPU benchmark worker and the lightweight
+# dashboard independently:
+#   docker compose --profile benchmark up      # runs the sweep on the GPU
+#   docker compose --profile dashboard up      # serves the dashboard on :8050
+#
+# GPU access requires the NVIDIA Container Toolkit on the host.
+# `mem_limit` / `shm_size` are the resource-management controls the role cares about.
+
+services:
+  benchmark:
+    profiles: ["benchmark"]
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: cudalpha:latest
+    command: ["python3", "-m", "bench.run_all", "--workload", "all"]
+    volumes:
+      - ../results:/app/results        # persist result artifacts to the host
+      - ../traces:/app/traces
+    mem_limit: 8g
+    shm_size: 2g
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: ["gpu"]
+
+  dashboard:
+    profiles: ["dashboard"]
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    image: cudalpha:latest
+    command: ["python3", "dashboard/app.py"]
+    ports:
+      - "8050:8050"
+    volumes:
+      - ../results:/app/results        # dashboard reads the same artifacts
+    mem_limit: 1g
