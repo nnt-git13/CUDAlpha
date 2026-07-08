@@ -7,10 +7,13 @@ and objective quality across portfolio sizes:
     minimize    xᵀ Q x  -  γ · μᵀ x        (Q = covariance, μ = expected returns)
     subject to  Σ xᵢ = 1,  x ≥ 0           (fully-invested, long-only)
 
-  - CPU baseline: CVXPY (picks OSQP/ECOS under the hood).       backend: cvxpy
-  - GPU path:     NVIDIA cuOpt.                                 backend: cuopt
+  - CPU baseline: CVXPY (tries CLARABEL, then OSQP/SCS).        backend: cvxpy
+  - GPU path (shipped): CuPy Frank-Wolfe solver over the simplex. backend: cupy-fw
+  - GPU path (planned): NVIDIA cuOpt direct-QP barrier solver — currently STUBBED
+    (`_cuopt_solve` raises NotImplementedError; `gpu()` falls back to cupy-fw).
 
-cuOpt notes (verify against your installed cuOpt docs before wiring):
+cuOpt notes (for when the stubbed path is wired — verify against your installed
+cuOpt docs first):
   * cuOpt solves QP of the form  min ½ xᵀQx + cᵀx  with linear constraints and
     bounds; the BARRIER (interior-point) method is currently the only method
     that supports QPs.
@@ -110,7 +113,7 @@ class OptimizerWorkload(Workload):
 
         return Callable_(fn=run, backend="cvxpy", throughput_items=n)
 
-    # --- GPU path (cuOpt, with a CuPy Frank–Wolfe fallback) -----------------
+    # --- GPU path: CuPy Frank–Wolfe (probes the stubbed cuOpt path first) ---
     def _cuopt_solve(self, cov: np.ndarray, mu: np.ndarray) -> np.ndarray:
         """Solve the QP with cuOpt's direct QP (barrier) interface.
 
